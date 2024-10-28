@@ -1,0 +1,47 @@
+:root {
+    --amarillo: #e4e500;
+    --rojo: #e52800;
+    --negro: #000000;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--negro);
+    font-family:sans-serif;
+    
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+header {
+    padding: 30px 0;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logotipo{
+    font-family:fantasy;
+    font-weight: normal;
+    color: var(--rojo);
+}
+header nave a{
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nave a:hover,
+header nave a.activo{
+    color: #FFF;
+}
