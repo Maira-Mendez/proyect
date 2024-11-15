@@ -4,44 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="widt=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+	<!-- aca esta lo que necesitamos para que nos abra los tipos de letra  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>CineMatch</title>
 </head>
 <body>
+	
     <header>
+		<!-- creamos los botones que nops llevaran a cada una de las categorias  -->
         <div class="contenedor">
             <h2 class="logotipo">CineMatch</h2>
             <nave>
-                <a href="#" class="activo">Recomendacion</a>
-                <a href="#">Comedia</a>
-                <a href="#">Romance</a>
-                <a href="#">Documéntales</a>
-                <a href="#">Acción</a>
-                <a href="#">Ciencia Ficción</a>
-                <a href="#">Infantiles</a>
-                <a href="#">Suspenso</a>
-                <a href="#">Terror</a>
+				<button role="button" class="boton">Comedia</button>
+                <button role="button" class="boton">Romance</button>
+				<button role="button" class="boton">Documéntales</button>
+                <button role="button" class="boton">Acción</button>
+				<button role="button" class="boton">Ciencia Ficción</button>
+                <button role="button" class="boton">Infantiles</button>
+				<button role="button" class="boton">Suspenso</button>
+                <button role="button" class="boton">Terror</button>
             </nave>
         </div>
     </header>
 
     <main>
-        <div class="pelicula_principal">
+		<!-- aca nos da lo de la pelicula que aparece al inicio  -->
+		<div class="pelicula_principal">
             <div class="contenedor">
                 <h3 class="titulo">Un eterno resplandor de una mente sin recuerdos</h3>
                 <p class="descipcion">Una mujer usa los servicios de una empresa para borrar de su memoria todo recuerdo de su ex pareja. Ofendido, el hombre intenta hacer lo mismo que ella, pero el proceso no sucede según lo esperado y el protagonista debe atravesar la gigantesca marea de recuerdos de su propio cerebro para recomponer las cosas.</p>
                 <button role="button" class="boton">más información</button>
             </div>
         </div>
-        
+			<!-- aca esta los indicadores para navegar en los carruseles  -->
+		<div class="peliculas-recomendadas">
+			<div class="contenedor-titulo-controles">
+				<h3>Recomendación</h3>
+				<div class="indicadores">
+                </div>
+			</div>
+			<!-- carrusel  de recomendaciones -->
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><</button>
+
+				<div class="contenedor-carousel1">
+					<div class="carousel1">
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/w500/2yyw20gloVgbzR9a5B15GqPdqux.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/w500/towmTJ0k29quKI9IDnOZKAAtQx.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/w500/cnqrMeXtoMQcId8swenqRQcbk0N.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/w500/dh3cSeQSffe9KuGCr2Z88wfOi1S.jpg"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/w500/tF9lGogwnAoURjSshnSUkItokiF.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/1DAIOEwzpbnphcIeTqStSF7JaQf.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/6AWBa4JFtaC4eEs48qjCCJd9BMr.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/4gBZFigs1HSCCdIiiieCKTq3eFR.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/2PPvMc165yk0zafItbitQ2ZqZyo.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/xT3CLqaix8CAhiuXmptJcxwCFBj.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/5.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/6.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/7.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha">></button>
+			</div>
+		</div>
+        <!-- carrusel  de comedia -->
         <div class="peliculas-recomendadas">
 			<div class="contenedor-titulo-controles">
-				<h3>Películas Recomendadas</h3>
+				<h3>Comedia</h3>
+				<div class="indicadores">
+
+				</div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><</button>
+
+				<div class="contenedor-carousel1">
+					<div class="carousel1">
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/k05RIgWvCubPd7zrjbXc8sG63yh.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/FP3ic4Hb52hqQSTbBZlJE8wLXL.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/fC7bQNa09LSr7izTuU6fafHKJok.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/dzeyzt92eOr6Dw03YpiIj64uWFG.jpg"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/ndHUCxAQYPPt09s42N38BvtmKh8.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/1iT6T6xmBWIhxyd7H1KGsDUgEuY.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/5.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/6.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/7.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha">></button>
+			</div>
+		</div>
+		<!-- carrusel  de romance -->
+		<div class="peliculas-recomendadas">
+			<div class="contenedor-titulo-controles">
+				<h3>Romance</h3>
 				<div class="indicadores">
                 </div>
 			</div>
@@ -52,16 +218,98 @@
 				<div class="contenedor-carousel1">
 					<div class="carousel1">
 						<div class="pelicula">
-							<a href="#"><img src="https://image.tmdb.org/t/p/original/sDoXpaKZmrzCSJH63zZvQQ9A7VK.jpg" alt=""></a>
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/k7rVpfmFq1hlRiP5qAcK0jv08rj.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="https://image.tmdb.org/t/p/original/kWJw7dCWHcfMLr0irTHAPIKrJ4I.jpg" alt=""></a>
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/ahsMZ2PCIVi5qGoPKjjeG3ZznjA.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="https://image.tmdb.org/t/p/original/tyenhgr4OuwcvdgbNg5avhHG00n.jpg" alt=""></a>
+							<a href="#"><img src="https://www.themoviedb.org/tv/87527/images/posters?language=es" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="https://image.tmdb.org/t/p/original/3GSy51XwUPz8db4BVsWjvQeFO4L.jpg alt=""></a>
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/8MXfKy57RMA31TvUXzfvOi2mGPz.jpg"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/3ZNKu4TfGgACD1D3kibI5Pgmqe4.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/1DAIOEwzpbnphcIeTqStSF7JaQf.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/6AWBa4JFtaC4eEs48qjCCJd9BMr.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/4gBZFigs1HSCCdIiiieCKTq3eFR.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/2PPvMc165yk0zafItbitQ2ZqZyo.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/xT3CLqaix8CAhiuXmptJcxwCFBj.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/5.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/6.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/7.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha">></button>
+			</div>
+		</div>
+		<!-- carrusel  de documentales -->
+		<div class="peliculas-recomendadas">
+			<div class="contenedor-titulo-controles">
+				<h3>Documéntales</h3>
+				<div class="indicadores">
+                </div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><</button>
+
+				<div class="contenedor-carousel1">
+					<div class="carousel1">
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/ixZn97gsbIbi5Ayxmsm2ecFlDAt.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/kVjnXfyyuxRqsgwHPzTuzOnoVFC.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/vF02RqXLgtmpJM5CRLSuvN3fVHi.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/aATwThDEPnEzb9SYS7hVOCMxifE.jpg"></a>
 						</div>
 						<div class="pelicula">
 							<a href="#"><img src="https://image.tmdb.org/t/p/original/2yor0tcEi77qmkGjgVjhkwLEfIC.jpg" alt=""></a>
@@ -120,7 +368,423 @@
 				<button role="button" id="flecha-derecha" class="flecha-derecha">></button>
 			</div>
 		</div>
+		<!-- carrusel  de accion -->
+
+		<div class="peliculas-recomendadas">
+			<div class="contenedor-titulo-controles">
+				<h3>Acción</h3>
+				<div class="indicadores">
+                </div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><</button>
+
+				<div class="contenedor-carousel1">
+					<div class="carousel1">
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/vhHGPprIYNaWrwJjgIiHJ9hRltc.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/x3zlm6VxPvVrYWE3bHkYUQMR798.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/yDJZYd2KnZFLz9eHaSx7XGgyRqJ.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/jxJvVfuZPiJP8yT5jySr1SKN6sU.jpg"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/wGdXR0Oca2cjQrZeAkzPWKNsD08.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/1DAIOEwzpbnphcIeTqStSF7JaQf.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/6AWBa4JFtaC4eEs48qjCCJd9BMr.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/4gBZFigs1HSCCdIiiieCKTq3eFR.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/2PPvMc165yk0zafItbitQ2ZqZyo.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/xT3CLqaix8CAhiuXmptJcxwCFBj.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/5.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/6.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/7.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha">></button>
+			</div>
+		</div>
+			<!-- carrusel  de ciencia ficcion -->
+
+		<div class="peliculas-recomendadas">
+			<div class="contenedor-titulo-controles">
+				<h3>Ciencia Ficción</h3>
+				<div class="indicadores">
+                </div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><</button>
+
+				<div class="contenedor-carousel1">
+					<div class="carousel1">
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/q6KI8ChlkIYYZww8C053cVfPQRo.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/6tZTnv7dGQrTdgZrTgvlVDy9WmN.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/2xMzOOJUdzNuNCg2KruM3QywZpN.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/1sPXhtV19MNP16bYFbKWqkbCcFT.jpg"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/acNRGwBz22E2m5OEWOhS8RiqiXM.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/1DAIOEwzpbnphcIeTqStSF7JaQf.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/6AWBa4JFtaC4eEs48qjCCJd9BMr.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/4gBZFigs1HSCCdIiiieCKTq3eFR.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/2PPvMc165yk0zafItbitQ2ZqZyo.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/xT3CLqaix8CAhiuXmptJcxwCFBj.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/5.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/6.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/7.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha">></button>
+			</div>
+		</div>
+			<!-- carrusel  de infantiles -->
+
+		<div class="peliculas-recomendadas">
+			<div class="contenedor-titulo-controles">
+				<h3>Infantiles</h3>
+				<div class="indicadores">
+                </div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><</button>
+
+				<div class="contenedor-carousel1">
+					<div class="carousel1">
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/2PuAY3xSvbchQWqpSiXw08Yt0NP.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/crVRgawCVPSuE2MXyFIKm0v8j8c.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/9wtYcXp3MwuedMr6tMpygCTlIqy.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/qfVZpfEEmpKm0ukRs4A8ZGjnawK.jpg"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/am9ZRGR4kwDnP0LJVsBMgAkZkj1.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/1DAIOEwzpbnphcIeTqStSF7JaQf.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/6AWBa4JFtaC4eEs48qjCCJd9BMr.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/4gBZFigs1HSCCdIiiieCKTq3eFR.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/2PPvMc165yk0zafItbitQ2ZqZyo.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/xT3CLqaix8CAhiuXmptJcxwCFBj.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/5.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/6.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/7.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha">></button>
+			</div>
+		</div>
+		<!-- carrusel  de suspenso -->
+		<div class="peliculas-recomendadas">
+			<div class="contenedor-titulo-controles">
+				<h3>Suspenso</h3>
+				<div class="indicadores">
+                </div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><</button>
+
+				<div class="contenedor-carousel1">
+					<div class="carousel1">
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/9LjeEVkW6dZB11TbmjU3B88CE2w.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/7ZdzQTmdwe6ztwW7m7TEpu3D1sw.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/gQOkcoIbywtUIXkhRCsl3RebEki.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/vzm6iiiGIZdia6XCdRPernR14tk.jpg"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/8FdQQ3cUCs9goEOr1qUFaHackoJ.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/1DAIOEwzpbnphcIeTqStSF7JaQf.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/6AWBa4JFtaC4eEs48qjCCJd9BMr.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/4gBZFigs1HSCCdIiiieCKTq3eFR.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/2PPvMc165yk0zafItbitQ2ZqZyo.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/xT3CLqaix8CAhiuXmptJcxwCFBj.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/5.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/6.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/7.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha">></button>
+			</div>
+		</div>
+		<!-- carrusel  de terror-->
+
+		<div class="peliculas-recomendadas">
+			<div class="contenedor-titulo-controles">
+				<h3>Terror</h3>
+				<div class="indicadores">
+                </div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><</button>
+
+				<div class="contenedor-carousel1">
+					<div class="carousel1">
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/10ir0eISr3p1MF1mjZwGTx7u4vv.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/4lwh4MX2yCogHflyAYMRbfdnpnm.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/iYDhZ0L6yy6lDpqgLUU5Dwv3WM1.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/2Rdk2muSq4519RIaf9EGlhmT3hT.jpg"></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/hQTl9lp8rKY7qKQSudsdd8Duo8K.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/1DAIOEwzpbnphcIeTqStSF7JaQf.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/6AWBa4JFtaC4eEs48qjCCJd9BMr.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/4gBZFigs1HSCCdIiiieCKTq3eFR.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/2PPvMc165yk0zafItbitQ2ZqZyo.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="https://image.tmdb.org/t/p/original/xT3CLqaix8CAhiuXmptJcxwCFBj.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/5.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/6.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/7.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha">></button>
+			</div>
+		</div>
+
     </main>
+
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<script src="main.js"></script>
     </header>

@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Fondo negro */
+    color: #ffffff; /* Letras en rojo */
+}
+/* los colores y la adaptabilidad del contenedor */
+.container {
+    width: 300px;
+    padding: 20px;
+    background-color: #333; /* Fondo del contenedor en un tono gris oscuro */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+/* titulo de la pelicula del inicio */
+h2 {
+    text-align: center;
+    color: #ffffff; /* Título en rojo */
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #f00000; /* Bordes en rojo */
+    background-color: #222; /* Fondo oscuro para los campos de texto */
+    color: #ffffff; /* Texto en rojo */
+}
+
+input::placeholder {
+    color: #ffffff; /* Color de los placeholders en rojo */
+}
+
+button {
+    padding: 10px;
+    background-color: #ff0000; /* Botón rojo */
+    color: #fff; /* Texto en blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #040675; /* Botón en un rojo más oscuro al pasar el mouse */
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+}
+
+a {
+    color: #ff0000; /* Enlaces en rojo */
+    text-decoration: none;
+}

@@ -1,3 +1,4 @@
+
 import requests
 
 # Clave API y URLs base
@@ -38,6 +39,6 @@ def obtener_imagen_por_nombre(nombre_pelicula, tamaño="w500"):
         return None
 
 # Ejemplo de uso
-imagen_url = obtener_imagen_por_nombre("Moana")  # Usando el nombre de la película
+imagen_url = obtener_imagen_por_nombre("Mulan")  # Usando el nombre de la película
 if imagen_url:
     print("URL de la imagen:", imagen_url)

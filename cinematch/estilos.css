@@ -47,6 +47,25 @@ header nave a.activo{
     color: #FFF;
 }
 
+
+/* botones de la parte de arriba */
+header .boton:hover{
+    background: #fff;
+    color: #000000;
+}
+
+header .boton{
+    background: rgba(0,0,0,0.5);
+    border: none;
+    padding: 0.40em 0.5em;
+    color: #fff;
+    margin-right: 20 px;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.0em;
+}
+
+
 /* principal*/
 .pelicula_principal{
     font-size: 16px;
@@ -194,6 +213,8 @@ header nave a.activo{
 	width: 100%;
 	vertical-align: top;
 }
+
+
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
 @media screen and (max-width: 800px) {
